@@ -1,15 +1,35 @@
 {
   "name": "email-validator-pro",
   "version": "1.0.0",
-  "description": "",
+  "description": "Advanced email validation library for Node.js. Includes format checks, MX records, SMTP inbox validation, disposable email detection, and quality scoring.",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "keywords": [
+    "email-validation",
+    "smtp-check",
+    "email-verification",
+    "email-validator",
+    "validate-email",
+    "node-email-validator",
+    "check-inbox",
+    "email-checker",
+    "disposable-email",
+    "mx-record",
+    "smtp"
+  ],
+  "author": {
+    "name": "Aminul Islam",
+    "email": "aminulislamdev23@gmail.com",
+    "url": "https://github.com/ai-mehedi/email-validator-pro"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ai-mehedi/email-validator-pro.git"
+  },
+  "license": "MIT",
   "dependencies": {
     "axios": "^1.9.0",
     "deep-email-validator": "^0.1.21",
@@ -23,5 +43,12 @@
     "@types/node": "^22.15.29",
     "@types/node-fetch": "^2.6.12",
     "typescript": "^5.8.3"
-  }
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/ai-mehedi/email-validator-pro/issues"
+  },
+  "homepage": "https://github.com/ai-mehedi/email-validator-pro#readme"
 }
