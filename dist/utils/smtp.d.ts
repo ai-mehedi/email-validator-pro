@@ -1,0 +1,31 @@
+export declare const ErrorCodes: {
+    readonly 211: "System status or help reply";
+    readonly 214: "Help message";
+    readonly 220: "Server ready";
+    readonly 221: "Server closing transmission channel";
+    readonly 250: "Requested mail action okay, completed";
+    readonly 251: "User not local; will forward";
+    readonly 354: "Start mail input; end with <CRLF>.<CRLF>";
+    readonly 421: "Service not available, closing transmission channel";
+    readonly 450: "Mailbox unavailable (busy)";
+    readonly 451: "Local error in processing";
+    readonly 452: "Insufficient system storage";
+    readonly 500: "Syntax error, command unrecognized";
+    readonly 501: "Syntax error in parameters or arguments";
+    readonly 502: "Command not implemented";
+    readonly 503: "Bad sequence of commands";
+    readonly 504: "Command parameter not implemented";
+    readonly 550: "Mailbox unavailable";
+    readonly 551: "User not local; please try <forward-path>";
+    readonly 552: "Exceeded storage allocation";
+    readonly 553: "Mailbox name not allowed";
+    readonly 554: "Transaction failed";
+};
+declare const createOutput: (smtpSuccess: boolean, message: string, inboxExists?: boolean, catchAll?: boolean) => {
+    smtpSuccess: boolean;
+    inboxExists: boolean;
+    catchAll: boolean;
+    message: string;
+};
+export declare function checkSMTP(recipient: string, debug: boolean | undefined, sender: string): Promise<ReturnType<typeof createOutput>>;
+export {};
