@@ -1,9 +1,12 @@
 {
-  "name": "email-validator-pro",
-  "version": "1.0.0",
+  "name": "email-validator-ultimate",
+  "version": "1.0.1",
   "description": "Advanced email validation library for Node.js. Includes format checks, MX records, SMTP inbox validation, disposable email detection, and quality scoring.",
   "main": "index.js",
   "type": "commonjs",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,11 +26,11 @@
   "author": {
     "name": "Aminul Islam",
     "email": "aminulislamdev23@gmail.com",
-    "url": "https://github.com/ai-mehedi/email-validator-pro"
+    "url": "https://github.com/ai-mehedi/email-validator-ultimate"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ai-mehedi/email-validator-pro.git"
+    "url": "https://github.com/ai-mehedi/email-validator-ultimate.git"
   },
   "license": "MIT",
   "dependencies": {
@@ -48,7 +51,7 @@
     "node": ">=16.0.0"
   },
   "bugs": {
-    "url": "https://github.com/ai-mehedi/email-validator-pro/issues"
+    "url": "https://github.com/ai-mehedi/email-validator-ultimate/issues"
   },
-  "homepage": "https://github.com/ai-mehedi/email-validator-pro#readme"
+  "homepage": "https://github.com/ai-mehedi/email-validator-ultimate#readme"
 }

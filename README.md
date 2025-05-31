@@ -1,4 +1,4 @@
-# 📧 email-validator-pro
+# 📧 email-validator-ultimate
 
 A powerful Node.js email validation library that goes beyond regex.  
 Performs DNS/MX record checks, SMTP deliverability tests, disposable email detection, and more.
@@ -13,31 +13,31 @@ If you want to check if an email inbox exists (SMTP/bounce check), make sure:
 - You provide a **valid `fromEmail` sender** (e.g., `noreply@yourdomain.com`).
 - **SMTP check is optional** and **disabled by default**.
 
-
-
 ## 🔧 Features
 
 - ✅ **Format validation** (RFC-compliant)
 - 📮 **MX record lookup**
-- ✉️ **SMTP inbox existence check** *(optional)*
+- ✉️ **SMTP inbox existence check** _(optional)_
 - 🚫 **Disposable email detection**
 - 👤 **Generic username detection** (e.g., `admin`, `info`)
 - 💼 **Provider and domain info**
 - 🔢 **Email quality scoring**
 - 🆓 **Free email provider detection** (e.g., Gmail, Yahoo)
-- 💡 **Catch-all detection** *(optional)*
+- 💡 **Catch-all detection** _(optional)_
 
 ## 📦 Installation
 
 ```bash
-npm install email-validator-pro
+npm install email-validator-ultimate
 ```
 
 ## 📦 Installation
+
 Basic Example (ESM)
+
 ```bash
 
-import { validateEmail } from 'email-validator-pro';
+import { validateEmail } from 'email-validator-ultimate';
 
 const result = await validateEmail({
   email: 'someone@example.com',
@@ -51,11 +51,10 @@ console.log(result);
 
 ```
 
-
 Using with Express (CommonJS)
 
 ```bash
-const { validateEmail } = require('email-validator-pro');
+const { validateEmail } = require('email-validator-ultimate');
 
 app.post('/validate', async (req, res) => {
   const result = await validateEmail({
@@ -71,7 +70,6 @@ app.post('/validate', async (req, res) => {
 ```
 
 ## ✅ Validation Result Example
-
 
 ```bash
 {
@@ -98,13 +96,12 @@ app.post('/validate', async (req, res) => {
 
 ## 🧪 Options
 
-| Option    | Type    | Required | Description                                 |
-|:--------- |:-------:|:--------:|:-------------------------------------------|
-| email     | string  | ✅       | Email address to validate                   |
-| fromEmail | string  | ✅       | Email sender used for SMTP (if enabled)    |
-| smtpCheck | boolean | ❌       | Enable SMTP inbox check (default: false)   |
-| debug     | boolean | ❌       | Log SMTP conversation to console            |
-
+| Option    |  Type   | Required | Description                              |
+| :-------- | :-----: | :------: | :--------------------------------------- |
+| email     | string  |    ✅    | Email address to validate                |
+| fromEmail | string  |    ✅    | Email sender used for SMTP (if enabled)  |
+| smtpCheck | boolean |    ❌    | Enable SMTP inbox check (default: false) |
+| debug     | boolean |    ❌    | Log SMTP conversation to console         |
 
 ## 🤝 Contributing
 
@@ -144,5 +141,3 @@ This project is licensed under the MIT License — see the [LICENSE] file for de
 [Node.js email validator](https://www.google.com/search?q=node.js+email+validator) ·
 [Email quality scoring](https://www.google.com/search?q=email+quality+scoring) ·
 [Generic username detection](https://www.google.com/search?q=generic+username+detection)
-
-
