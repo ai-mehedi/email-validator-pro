@@ -124,6 +124,11 @@ This project is licensed under the MIT License — see the [LICENSE] file for de
 © 2025
 
 ---
+## ✍️ Author
+
+**Mehedi Hasan**  
+📧 [aminulislamdev23@gmail.com](mailto:aminulislamdev23@gmail.com)   
+🌐 [GitHub](https://github.com/ai-mehedi) 
 
 ## 🔑 Keywords
 
