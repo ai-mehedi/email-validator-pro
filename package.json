@@ -1,8 +1,8 @@
 {
   "name": "email-validator-ultimate",
-"version": "1.0.2",
+  "version": "1.0.3",
   "description": "Advanced email validation library for Node.js. Includes format checks, MX records, SMTP inbox validation, disposable email detection, and quality scoring.",
- "main": "dist/index.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "commonjs",
   "publishConfig": {
@@ -35,17 +35,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "axios": "^1.9.0",
-    "deep-email-validator": "^0.1.21",
-    "didyoumean2": "^7.0.4",
-    "disposable-email-domains": "^1.0.62",
-    "email-verify": "^0.2.1",
-    "node-fetch": "^3.3.2"
+    "axios": "^1.9.0"
   },
   "devDependencies": {
-    "@types/disposable-email-domains": "^1.0.6",
     "@types/node": "^22.15.29",
-    "@types/node-fetch": "^2.6.12",
     "typescript": "^5.8.3"
   },
   "engines": {
